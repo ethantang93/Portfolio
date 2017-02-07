@@ -49,14 +49,20 @@
   text-align: center;
   vertical-align: top;
   display: inline-block;
+  margin: 10px;
 }
-.logoimg{
+.skillbox img{
+  background-color: white;
   display: inline-block;
   height: 60px;
   width: 60px;
   border-radius: 8px;
-  background-color: white;
-};
+  margin: 7px;
+}
+
+.skillbox h2{
+  color: white
+}
 a{color:white;}
 a:visited{color: white;};
 a:hover{color: white;};

@@ -40,9 +40,9 @@
                     <br>
                     <br>
 
-                    <md-button class="md-raised md-warn bigger" id="scrollToAboutMe">
+                    <md-button class="md-raised bigger changeColor" id="scrollToAboutMe" style="background-color:transparent">
                         <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
-                        <h3 class='md-subhead'>Learn more about me</h3>
+                        <h3 class='md-subhead white'>Learn more about me</h3>
                     </md-button>
                 </div>
             </div>
@@ -110,9 +110,9 @@
                         </div>
                     </div>
                     <br><br><br>
-                    <md-button class="md-raised md-warn bigger" id="scrollToSkills">
+                    <md-button class="md-raised md-warn bigger changeColor" id="scrollToSkills" style="background-color:transparent">
                         <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
-                        <h3>See My skills</h3>
+                        <h3 class="white">See My skills</h3>
                     </md-button>
                 </div>
                 <div flex="20" class=""></div>
@@ -122,39 +122,39 @@
                 <div class="" flex="10"></div>
                 <div class="" flex="70">
                     <h1 class="white md-display-2">My skills</h1>
-                    <div class="" layout="row" layout-align="center center">
-                        <div layout="row" class="" flex="100">
-                            <div class="skillbox">
-                                <h2>Languages</h2>
-                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                    <div class="" layout="row" layout-wrap layout-align="center center">
+                        <div flex="70" layout-gt-md="row" layout-sm="column">
+                            <div class="skillbox" style="display:inline-block" flex="33">
+                                <h2 class="white md-headline">Languages</h2>
+                                <img class="logoimg bigger" src="../static/images/javascript-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/python-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/ruby-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/html-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/css-logo.png" alt="">
                             </div>
-                            <div class="skillbox">
-                                <h2>Framework</h2>
-                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                            <div class="skillbox" style="display:inline-block" flex="33">
+                                <h2 class="white md-headline">Frameworks</h2>
+                                <img class="logoimg bigger" src="../static/images/angularjs-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/django-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/rails-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/flask-logo.png" alt="">
                             </div>
-                            <div class="skillbox">
-                                <h2>Libraries</h2>
-                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                            <div class="skillbox" style="display:inline-block" flex="33">
+                                <h2 class="white md-headline">Libraries</h2>
+                                <img class="logoimg bigger" src="../static/images/jquery-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/materialize-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/bootstrap-logo.png" alt="">
                             </div>
-                            <div class="skillbox">
-                                <h2>Databases</h2>
-                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
-                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                            <div class="skillbox" style="display:inline-block" flex="33">
+                                <h2 class="white md-headline">Databases</h2>
+                                <img class="logoimg bigger" src="../static/images/mysql-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/postgresql-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/mongodb-logo.jpg" alt="">
+                            </div>
+                            <div class="skillbox" style="display:inline-block" flex="33">
+                                <h2 class="white md-headline">Dev Tools</h2>
+                                <img class="logoimg bigger" src="../static/images/atom-logo.png" alt="">
+                                <img class="logoimg bigger" src="../static/images/github-logo.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -271,6 +271,11 @@
                         $(this).removeClass('animated pulse')
                     })
             });
+            $(".changeColor").hover(function(){
+                $(this).addClass('md-warn').removeClass('white').removeAttr('style')
+            },function(){
+                $(this).removeClass('md-warn').addClass('white').css({'background-color':'transparent'})
+            })
 
         })
     </script>
