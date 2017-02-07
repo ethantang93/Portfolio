@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Ethan Tang | Full Stack Developer</title>
+
+</head>
+
+<body ng-controller="myController" ng-cloak>
+    <div class="container" layout="" flex>
+        <md-content class="image" flex layout="column" layout-align="center center">
+            <!-- 1ST PAGE OF MY PROTFOLIO -->
+            <div id="homePage">
+                <div class="personalInfo">
+                    <img id='head-shot' layout-align="center center" src="../static/images/head-shot.jpg" alt="">
+                    <h3 class="white md-title">
+                        <span class="blast">Full</span>
+                        <span class="blast">Stack</span>
+                        <span class="blast">Software</span>
+                        <span class="blast">Developer</span>
+                        <span class="blast">&nbsp|&nbsp</span>
+                        <span class="blast">Photographer</span>
+                    </h3>
+                    <h1 class="white md-display-3">
+                        <span class="blast">Hello</span>
+                        <span class="blast">, </span>
+                        <span class="blast">My</span>
+                        <span class="blast">name</span>
+                        <span class="blast">is</span>
+                        <span class="blast">Ethan.</span>
+                    </h1>
+                    <br>
+                    <br>
+                    <br>
+
+                    <md-button class="md-raised md-warn bigger" id="scrollToAboutMe">
+                        <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
+                        <h3 class='md-subhead'>Learn more about me</h3>
+                    </md-button>
+                </div>
+            </div>
+            <div id="aboutmePage" layout="column" layout-wrap layout-align="center center">
+                <div flex="10" class=""></div>
+                <div flex="70">
+                    <div layout="row" layout-wrap layout-align="center center" class="">
+                        <div flex="70" class="">
+                            <h1 class="white md-display-3" style="margin-top:0%">
+                                <span class="blast">About</span>
+                                <span class="blast" >Me</span>
+                            </h1>
+                            <h1 class="white md-display-1">
+                                <span class="blast">I</span>
+                                <span class="blast">am</span>
+                                <span class="blast">a</span>
+                                <span class="blast">full</span>
+                                <span class="blast">stack</span>
+                                <span class="blast">software</span>
+                                <span class="blast">developer</span>
+                                <span class="blast">graduated</span>
+                                <span class="blast">from</span>
+                                <span class="blast">University</span>
+                                <span class="blast">of</span>
+                                <span class="blast">Illinois</span>
+                                <span class="blast">with</span>
+                                <span class="blast">an</span>
+                                <span class="blast">applied</span>
+                                <span class="blast">mathematics</span>
+                                <span class="blast">degree.</span>
+                            </h1>
+                            <h1 class="white md-display-1">
+                                <span class="blast">Experienced</span>
+                                <span class="blast">with</span>
+                                <span class="blast">Python,</span>
+                                <span class="blast">Javascript,</span>
+                                <span class="blast">and</span>
+                                <span class="blast">Ruby,</span>
+                                <span class="blast">I</span>
+                                <span class="blast">am</span>
+                                <span class="blast">dedicated</span>
+                                <span class="blast">to</span>
+                                <span class="blast">creating</span>
+                                <span class="blast">efficient,</span>
+                                <span class="blast">user-friendly,</span>
+                                <span class="blast">and</span>
+                                <span class="blast">attractive</span>
+                                <span class="blast">web</span>
+                                <span class="blast">applications.</span>
+                            </h1>
+                            <h1 flex class="white md-display-1">
+                                <span class="blast">In</span>
+                                <span class="blast">my</span>
+                                <span class="blast">spare</span>
+                                <span class="blast">time,</span>
+                                <span class="blast">I</span>
+                                <span class="blast">am</span>
+                                <span class="blast">a</span>
+                                <span class="blast">photographer</span>
+                                <span class="blast">and</span>
+                                <span class="blast">love</span>
+                                <span class="blast">to</span>
+                                <span class="blast">travel.</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <md-button class="md-raised md-warn bigger" id="scrollToSkills">
+                        <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
+                        <h3>See My skills</h3>
+                    </md-button>
+                </div>
+                <div flex="20" class=""></div>
+            </div>
+            <!-- 3RD PAGE OF MY PROTFOLIO -->
+            <div id="skillsPage" layout="column" layout-align="center center" ng-cloak>
+                <div class="" flex="10"></div>
+                <div class="" flex="70">
+                    <h1 class="white md-display-2">My skills</h1>
+                    <div class="" layout="row" layout-align="center center">
+                        <div layout="row" class="" flex="100">
+                            <div class="skillbox">
+                                <h2>Languages</h2>
+                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                            </div>
+                            <div class="skillbox">
+                                <h2>Framework</h2>
+                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                            </div>
+                            <div class="skillbox">
+                                <h2>Libraries</h2>
+                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                            </div>
+                            <div class="skillbox">
+                                <h2>Databases</h2>
+                                <img class="logoimg" src="../static/images/javascript-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/python-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/ruby-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/html-logo.png" alt="">
+                                <img class="logoimg" src="../static/images/css-logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="" flex="20"></div>
+            </div>
+            <!-- 4TH PAGE OF MY PROTFOLIO -->
+            <div id="projectPage" layout-align="center center" ng-cloak>
+                <h1 style="color:white; padding-top:6%">Projects That I built</h1>
+                <div flex layout="row" layout-align="space-around center" id="popUpContainer1" ng-cloak>
+                    <md-card flex="30">
+                        <img class="md-card-image" src="../static/images/store.jpg" alt="image caption">
+                        <md-card-content>
+                            <h2>Mini Store</h2>
+                            <p>A simple e-commerce web application built with material design principle in mind.</p>
+                            <p>Details
+                                <md-icon ng-click="showDetail($event)" style="color:grey;font-size:30px;padding-top:0px;" md-font-icon="material-icons">more</md-icon>
+                            </p>
+                        </md-card-content>
+                        <div class="md-actions" layout="row|column" layout-align="start|end|center start|end|center">
+                            <md-button class="md-raised md-warn bigger" href="http://54.149.82.219">Visit</md-button>
+                            <md-button class="md-raised md-warn bigger" href="https://github.com/ethantang93/Mini-Store">View Source</md-button>
+                        </div>
+                    </md-card>
+                    <md-card flex="30">
+                        <img class="md-card-image" src="../static/images/store.jpg" alt="image caption">
+                        <md-card-content>
+                            <h2>Another Project Not decided</h2>
+                            <p></p>
+                            <p>Details
+                                <md-icon ng-click="showDetail($event)" style="color:grey;font-size:30px;padding-top:0px;" md-font-icon="material-icons">more</md-icon>
+                            </p>
+                        </md-card-content>
+                        <div class="md-actions" layout="row|column" layout-align="start|end|center start|end|center">
+                            <md-button class="md-raised md-warn bigger" href="http://54.149.82.219">Visit</md-button>
+                            <md-button class="md-raised md-warn bigger" href="https://github.com/ethantang93/Mini-Store">View Source</md-button>
+                        </div>
+                    </md-card>
+                </div>
+            </div>
+        </md-content>
+    </div>
+
+
+
+    <!-- angular modules setup -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="angular-route/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <!-- app setup -->
+    <script type="text/javascript" src="assets/app.js"></script>
+    <!-- controllers setup -->
+    <script type="text/javascript" src="assets/controllers/Controller1.js"></script>
+    <script type="text/javascript" src="assets/controllers/Controller2.js"></script>
+    <script type="text/javascript" src="assets/controllers/Controller3.js"></script>
+    <!-- factory setup -->
+    <script type="text/javascript" src="assets/factories/Factory1.js"></script>
+    <script type="text/javascript" src="assets/factories/Factory2.js"></script>
+    <script type="text/javascript" src="assets/factories/Factory3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            'use strict';
+
+            $rootScope.$on('$routeChangeSuccess', function(event, current) {
+                $scope.currentLink = getCurrentLinkFromRoute(current);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#scrollToAboutMe").click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#aboutmePage").offset().top
+                    },
+                    'slow');
+                // return false
+            });
+            $("#scrollToSkills").click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#skillsPage").offset().top
+                    },
+                    'slow');
+                return false
+            });
+            $(".back-to-top").click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#homePage").offset().top
+                    },
+                    'slow');
+                return false
+            });
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 500) {
+                    $("a.back-to-top").fadeIn("slow")
+                } else {
+                    $("a.back-to-top").fadeOut("slow")
+                }
+            });
+            $(".blast").hover(function() {
+                $(this).addClass('animated rubberBand').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function() {
+                        $(this).removeClass('animated rubberBand')
+                    })
+            });
+            $(".bigger").hover(function() {
+                $(this).addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function() {
+                        $(this).removeClass('animated pulse')
+                    })
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
