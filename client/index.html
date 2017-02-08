@@ -158,6 +158,11 @@
                             </div>
                         </div>
                     </div>
+                    <br><br><br>
+                    <md-button class="md-raised md-warn bigger changeColor" id="scrollToProject" style="background-color:transparent">
+                        <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
+                        <h3 class="white">See Projects I built</h3>
+                    </md-button>
                 </div>
                 <div class="" flex="20"></div>
             </div>
@@ -175,7 +180,7 @@
                             </p>
                         </md-card-content>
                         <div class="md-actions" layout="row|column" layout-align="start|end|center start|end|center">
-                            <md-button class="md-raised md-warn bigger" href="http://54.149.82.219">Visit</md-button>
+                            <md-button class="md-raised md-warn bigger" href="http://54.244.38.216">Visit</md-button>
                             <md-button class="md-raised md-warn bigger" href="https://github.com/ethantang93/Mini-Store">View Source</md-button>
                         </div>
                     </md-card>
@@ -193,6 +198,13 @@
                             <md-button class="md-raised md-warn bigger" href="https://github.com/ethantang93/Mini-Store">View Source</md-button>
                         </div>
                     </md-card>
+                </div>
+            </div>
+            <div id="contactPage" layout-align="center center" ng-cloak>
+                <div id="footer" class="">
+                    <h1 class="white md-display-2">Contact</h1>
+                    <h3 class="md-headline">I am available for hire. Feel free to reach out to me if you have any questions</h3>
+                    <h3 class="md-display-1">tangrenxing@gmail.com</h3>
                 </div>
             </div>
         </md-content>
@@ -236,11 +248,18 @@
                         scrollTop: $("#aboutmePage").offset().top
                     },
                     'slow');
-                // return false
+                return false
             });
             $("#scrollToSkills").click(function() {
                 $('html,body').animate({
                         scrollTop: $("#skillsPage").offset().top
+                    },
+                    'slow');
+                return false
+            });
+            $("#scrollToProject").click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#projectPage").offset().top
                     },
                     'slow');
                 return false
