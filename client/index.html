@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../static/css/animate.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ae927b75f4.js"></script>
     <title>Ethan Tang | Full Stack Developer</title>
 
 </head>
@@ -52,60 +53,65 @@
                     <div layout="row" layout-wrap layout-align="center center" class="">
                         <div flex="70" class="">
                             <h1 class="white md-display-3" style="margin-top:0%">
-                                <span class="blast">About</span>
-                                <span class="blast" >Me</span>
+                                <span class="">About</span>
+                                <span class="" >Me</span>
                             </h1>
                             <h1 class="white md-display-1">
-                                <span class="blast">I</span>
-                                <span class="blast">am</span>
-                                <span class="blast">a</span>
+                                <span class="">I</span>
+                                <span class="">am</span>
+                                <span class="">a</span>
                                 <span class="blast">full</span>
                                 <span class="blast">stack</span>
                                 <span class="blast">software</span>
                                 <span class="blast">developer</span>
-                                <span class="blast">graduated</span>
-                                <span class="blast">from</span>
+                                <span class="">graduated</span>
+                                <span class="">from</span>
                                 <span class="blast">University</span>
                                 <span class="blast">of</span>
                                 <span class="blast">Illinois</span>
-                                <span class="blast">with</span>
-                                <span class="blast">an</span>
+                                <span class="">with</span>
+                                <span class="">an</span>
                                 <span class="blast">applied</span>
                                 <span class="blast">mathematics</span>
                                 <span class="blast">degree.</span>
                             </h1>
                             <h1 class="white md-display-1">
-                                <span class="blast">Experienced</span>
-                                <span class="blast">with</span>
+                                <span class="">Experienced</span>
+                                <span class="">with</span>
                                 <span class="blast">Python,</span>
                                 <span class="blast">Javascript,</span>
-                                <span class="blast">and</span>
+                                <span class="">and</span>
                                 <span class="blast">Ruby,</span>
-                                <span class="blast">I</span>
-                                <span class="blast">am</span>
-                                <span class="blast">dedicated</span>
-                                <span class="blast">to</span>
-                                <span class="blast">creating</span>
+                                <span class="">I</span>
+                                <span class="">am</span>
+                                <span class="">dedicated</span>
+                                <span class="">to</span>
+                                <span class="">creating</span>
                                 <span class="blast">efficient,</span>
                                 <span class="blast">user-friendly,</span>
-                                <span class="blast">and</span>
+                                <span class="">and</span>
                                 <span class="blast">attractive</span>
                                 <span class="blast">web</span>
                                 <span class="blast">applications.</span>
                             </h1>
                             <h1 flex class="white md-display-1">
-                                <span class="blast">In</span>
-                                <span class="blast">my</span>
-                                <span class="blast">spare</span>
-                                <span class="blast">time,</span>
-                                <span class="blast">I</span>
-                                <span class="blast">am</span>
-                                <span class="blast">a</span>
+                                <span class="">In</span>
+                                <span class="">my</span>
+                                <span class="">spare</span>
+                                <span class="">time,</span>
+                                <span class="">I</span>
+                                <span class="">am</span>
+                                <span class="">a</span>
                                 <span class="blast">photographer</span>
-                                <span class="blast">and</span>
-                                <span class="blast">love</span>
-                                <span class="blast">to</span>
+                                <span class="">and</span>
+                                <span class="">love</span>
+                                <span class="">to</span>
                                 <span class="blast">travel.</span>
+                                <span class="">I</span>
+                                <span class="">am</span>
+                                <span class="">also</span>
+                                <span class="">a</span>
+                                <span class="blast">Si-Fi Fan</span>
                             </h1>
                         </div>
                     </div>
@@ -199,12 +205,22 @@
                         </div>
                     </md-card>
                 </div>
+                <md-button class="md-raised md-warn bigger changeColor" id="scrollToContact" style="background-color:transparent">
+                    <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
+                    <h3 class="white">Contact me</h3>
+                </md-button>
             </div>
             <div id="contactPage" layout-align="center center" ng-cloak>
                 <div id="footer" class="">
                     <h1 class="white md-display-2">Contact</h1>
-                    <h3 class="md-headline">I am available for hire. Feel free to reach out to me if you have any questions</h3>
-                    <h3 class="md-display-1">tangrenxing@gmail.com</h3>
+                    <h3 class="md-headline">I am available for hire. Feel free to reach out to me if you have any questions!</h3>
+                    <h3 class="md-display-1" style="margin-top:5%;color:#29b6f6;">tangrenxing@gmail.com</h3>
+                    <a href="https://github.com/ethantang93"><i class="icons fa fa-github fa-4x"aria-hidden="true"></i></a>
+    	            <a href="https://www.linkedin.com/in/ethan-tang"><i class="icons fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+                    <a href="mailto:tangrenxing@gmail.com"><i class="icons fa fa-envelope-square fa-4x" aria-hidden="true"></i></a><br>
+		    	    <a class="resume" href="../static/images/EthanTangResume.pdf">View PDF Resume</a>
+				    <br>
+				    <p class="signature">Hand-Built by me &#169</p>
                 </div>
             </div>
         </md-content>
@@ -260,6 +276,13 @@
             $("#scrollToProject").click(function() {
                 $('html,body').animate({
                         scrollTop: $("#projectPage").offset().top
+                    },
+                    'slow');
+                return false
+            });
+            $("#scrollToContact").click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#contactPage").offset().top
                     },
                     'slow');
                 return false
