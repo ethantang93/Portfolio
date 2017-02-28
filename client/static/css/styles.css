@@ -106,3 +106,18 @@ a:active{color: white;};
 
 .dialogdemoBasicUsage .dialog-demo-prerendered md-checkbox {
   margin-bottom: 0; }
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+    .md-display-3{ font-size:2.7em;}
+    .md-display-1{ font-size: 1.1em;
+                   line-height: 25px;}
+    .skillbox img { height: 30px; width: 30px;}
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 414px) {
+  .md-display-3{ font-size:2.7em;}
+  .md-display-1{ font-size: 1.1em;
+                 line-height: 25px;}
+}
