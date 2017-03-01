@@ -45,7 +45,7 @@
       height:100vh;
   }
   #footer{
-    margin-top: 10%;
+    margin-top: 0%;
     color: white;
   }
   #skillsPage{
@@ -92,12 +92,9 @@ and (min-device-width : 375px)
 and (max-device-width : 736px) {
     .skillbox img { height: 35px; width: 35px;}
     #aboutmePage { height: 105vh;}
-    #skillsPage { height: 105vh;}
-}
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 414px) {
-
+    #skillsPage { height: auto; padding-bottom: 10vh;}
+    #contactPage { padding-top: 10vh;}
+    #projectPage { height: auto; padding-bottom: 10vh; padding-top: 4vh;}
 }
 @media only screen
 and ( min-device-width : 737px ){
