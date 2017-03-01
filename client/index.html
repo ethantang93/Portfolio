@@ -2,178 +2,169 @@
 <html ng-app='app'>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Angular Material style sheet -->
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <!--Import my style sheet-->
     <link rel="stylesheet" href="../static/css/styles.css">
+    <!-- animate css setup -->
     <link rel="stylesheet" href="../static/css/animate.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Font AWESOME  -->
     <script src="https://use.fontawesome.com/ae927b75f4.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <title>Ethan Tang | Full Stack Developer</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
-<body ng-controller="myController" ng-cloak>
-    <div class="container" layout="" flex>
-        <md-content class="image" flex layout="column" layout-align="center center">
+<body ng-controller="myController">
+    <div class="">
             <!-- 1ST PAGE OF MY PROTFOLIO -->
             <div id="homePage">
-                <div class="personalInfo">
+                <div class="personalInfo row container">
                     <img id='head-shot' layout-align="center center" src="../static/images/head-shot.jpg" alt="">
-                    <h3 class="white md-title">
+                    <h4 class="white-text">
                         <span class="blast">Full</span>
                         <span class="blast">Stack</span>
                         <span class="blast">Software</span>
                         <span class="blast">Developer</span>
                         <span class="blast">&nbsp|&nbsp</span>
                         <span class="blast">Photographer</span>
-                    </h3>
-                    <h1 class="white md-display-3">
+                    </h4>
+                    <h2 class="white-text">
                         <span class="blast">Hello</span>
                         <span class="blast">, </span>
                         <span class="blast">My</span>
                         <span class="blast">name</span>
                         <span class="blast">is</span>
                         <span class="blast">Ethan.</span>
-                    </h1>
-                    <br>
-                    <br>
-                    <br>
-
-                    <md-button class="md-raised bigger changeColor" id="scrollToAboutMe" style="background-color:transparent">
-                        <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
-                        <h3 class='md-subhead white'>Learn more about me</h3>
-                    </md-button>
+                    </h2>
+                    <div class="waves-effect waves-light btn blue bigger" id="scrollToAboutMe">
+                        <p style="margin:0px;">learn more about me</p>
+                        <i class="material-icons" style="color:white;font-size:30px;">arrow_downward</i>
+                    </div>
                 </div>
             </div>
-            <div id="aboutmePage" layout="column" layout-wrap layout-align="center center">
-                <div flex="10" class=""></div>
-                <div flex="70">
-                    <div layout="row" layout-wrap layout-align="center center" class="">
-                        <div flex="70" class="">
-                            <h1 class="white md-display-3" style="margin-top:0%">
-                                <span class="">About</span>
-                                <span class="" >Me</span>
-                            </h1>
-                            <h1 class="white md-display-1">
-                                <span class="">I</span>
-                                <span class="">am</span>
-                                <span class="">a</span>
-                                <span class="blast">full</span>
-                                <span class="blast">stack</span>
-                                <span class="blast">software</span>
-                                <span class="blast">developer</span>
-                                <span class="">graduated</span>
-                                <span class="">from</span>
-                                <span class="blast">University</span>
-                                <span class="blast">of</span>
-                                <span class="blast">Illinois</span>
-                                <span class="">with</span>
-                                <span class="">an</span>
-                                <span class="blast">applied</span>
-                                <span class="blast">mathematics</span>
-                                <span class="blast">degree.</span>
-                            </h1>
-                            <h1 class="white md-display-1">
-                                <span class="">Experienced</span>
-                                <span class="">with</span>
-                                <span class="blast">Python,</span>
-                                <span class="blast">Javascript,</span>
-                                <span class="">and</span>
-                                <span class="blast">Ruby,</span>
-                                <span class="">I</span>
-                                <span class="">am</span>
-                                <span class="">dedicated</span>
-                                <span class="">to</span>
-                                <span class="">creating</span>
-                                <span class="blast">efficient,</span>
-                                <span class="blast">user-friendly,</span>
-                                <span class="">and</span>
-                                <span class="blast">attractive</span>
-                                <span class="blast">web</span>
-                                <span class="blast">applications.</span>
-                            </h1>
-                            <h1 flex class="white md-display-1">
-                                <span class="">In</span>
-                                <span class="">my</span>
-                                <span class="">spare</span>
-                                <span class="">time,</span>
-                                <span class="">I</span>
-                                <span class="">am</span>
-                                <span class="">a</span>
-                                <span class="blast">photographer</span>
-                                <span class="">and</span>
-                                <span class="">love</span>
-                                <span class="">to</span>
-                                <span class="blast">travel.</span>
-                                <span class="">I</span>
-                                <span class="">am</span>
-                                <span class="">also</span>
-                                <span class="">a</span>
-                                <span class="blast">Si-Fi Fan</span>
-                            </h1>
-                        </div>
+            <!-- 2ND PAGE OF MY PORTFOLIO -->
+            <div id="aboutmePage">
+                    <div class="row container">
+                            <div class="col s12">
+                                <h2 class="white-text" style="margin-top:10vh">
+                                    <span class="">About</span>
+                                    <span class="" >Me</span>
+                                </h2>
+                                <h5 class="white-text">
+                                    <span class="">I</span>
+                                    <span class="">am</span>
+                                    <span class="">a</span>
+                                    <span class="blast">full</span>
+                                    <span class="blast">stack</span>
+                                    <span class="blast">software</span>
+                                    <span class="blast">developer</span>
+                                    <span class="">graduated</span>
+                                    <span class="">from</span>
+                                    <span class="blast">University</span>
+                                    <span class="blast">of</span>
+                                    <span class="blast">Illinois</span>
+                                    <span class="">with</span>
+                                    <span class="">an</span>
+                                    <span class="blast">applied</span>
+                                    <span class="blast">mathematics</span>
+                                    <span class="blast">degree.</span>
+                                </h5>
+                                <h5 class="white-text">
+                                    <span class="">Experienced</span>
+                                    <span class="">with</span>
+                                    <span class="blast">Python,</span>
+                                    <span class="blast">Javascript,</span>
+                                    <span class="">and</span>
+                                    <span class="blast">Ruby,</span>
+                                    <span class="">I</span>
+                                    <span class="">am</span>
+                                    <span class="">dedicated</span>
+                                    <span class="">to</span>
+                                    <span class="">creating</span>
+                                    <span class="blast">efficient,</span>
+                                    <span class="blast">user-friendly,</span>
+                                    <span class="">and</span>
+                                    <span class="blast">attractive</span>
+                                    <span class="blast">web</span>
+                                    <span class="blast">applications.</span>
+                                </h5>
+                                <h5 class="white-text">
+                                    <span class="">In</span>
+                                    <span class="">my</span>
+                                    <span class="">spare</span>
+                                    <span class="">time,</span>
+                                    <span class="">I</span>
+                                    <span class="">am</span>
+                                    <span class="">a</span>
+                                    <span class="blast">photographer</span>
+                                    <span class="">and</span>
+                                    <span class="">love</span>
+                                    <span class="">to</span>
+                                    <span class="blast">travel.</span>
+                                    <span class="">I</span>
+                                    <span class="">am</span>
+                                    <span class="">also</span>
+                                    <span class="">a</span>
+                                    <span class="blast">Si-Fi Fan</span>
+                                </h5>
+                            </div>
+
                     </div>
-                    <br><br><br>
-                    <md-button class="md-raised md-warn bigger changeColor" id="scrollToSkills" style="background-color:transparent">
-                        <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
-                        <h3 class="white">See My skills</h3>
-                    </md-button>
-                </div>
-                <div flex="20" class=""></div>
+                    <div class="waves-effect waves-light btn blue bigger" id="scrollToSkills">
+                        <p style="margin:0px;">See My Skills</p>
+                        <i class="material-icons" style="color:white;font-size:30px;">arrow_downward</i>
+                    </div>
             </div>
             <!-- 3RD PAGE OF MY PROTFOLIO -->
-            <div id="skillsPage" layout="column" layout-align="center center" ng-cloak>
-                <div class="" flex="10"></div>
-                <div class="" flex="70">
-                    <h1 class="white md-display-2">My skills</h1>
-                    <div class="" layout="row" layout-wrap layout-align="center center">
-                        <div flex="70" layout-gt-md="row" layout-sm="column">
-                            <div class="skillbox" style="display:inline-block" flex="33">
-                                <h2 class="white md-headline">Languages</h2>
-                                <img class="logoimg bigger" src="../static/images/javascript-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/python-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/ruby-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/html-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/css-logo.png" alt="">
-                            </div>
-                            <div class="skillbox" style="display:inline-block" flex="33">
-                                <h2 class="white md-headline">Frameworks</h2>
-                                <img class="logoimg bigger" src="../static/images/angularjs-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/django-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/rails-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/flask-logo.png" alt="">
-                            </div>
-                            <div class="skillbox" style="display:inline-block" flex="33">
-                                <h2 class="white md-headline">Libraries</h2>
-                                <img class="logoimg bigger" src="../static/images/jquery-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/materialize-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/bootstrap-logo.png" alt="">
-                            </div>
-                            <div class="skillbox" style="display:inline-block" flex="33">
-                                <h2 class="white md-headline">Databases</h2>
-                                <img class="logoimg bigger" src="../static/images/mysql-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/postgresql-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/mongodb-logo.jpg" alt="">
-                            </div>
-                            <div class="skillbox" style="display:inline-block" flex="33">
-                                <h2 class="white md-headline">Dev Tools</h2>
-                                <img class="logoimg bigger" src="../static/images/atom-logo.png" alt="">
-                                <img class="logoimg bigger" src="../static/images/github-logo.png" alt="">
+            <div id="skillsPage">
+                <div class="container row">
+                        <h2 class="white-text" style="margin-top:0vh">My skills</h2>
+                        <div class="col s12">
+                            <div class="row center-align">
+                                <div class="skillbox col s6 m4 l3 offset-l1" style="display:inline-block">
+                                    <h5 class="white-text">Languages</h5>
+                                    <img class="logoimg bigger" src="../static/images/javascript-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/python-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/ruby-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/html-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/css-logo.png" alt="">
+                                </div>
+                                <div class="skillbox col s6 m4 l3" style="display:inline-block">
+                                    <h5 class="white-text">Frameworks</h5>
+                                    <img class="logoimg bigger" src="../static/images/angularjs-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/django-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/rails-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/flask-logo.png" alt="">
+                                </div>
+                                <div class="skillbox col s6 m4 l3" style="display:inline-block">
+                                    <h5 class="white-text">Libraries</h5>
+                                    <img class="logoimg bigger" src="../static/images/jquery-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/materialize-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/bootstrap-logo.png" alt="">
+                                </div>
+                                <div class="skillbox col s6 m4 l4 offset-m2 offset-l2" style="display:inline-block">
+                                    <h5 class="white-text">Databases</h5>
+                                    <img class="logoimg bigger" src="../static/images/mysql-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/postgresql-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/mongodb-logo.jpg" alt="">
+                                </div>
+                                <div class="skillbox col s6 m4 l4" style="display:inline-block">
+                                    <h5 class="white-text">Dev Tools</h5>
+                                    <img class="logoimg bigger" src="../static/images/atom-logo.png" alt="">
+                                    <img class="logoimg bigger" src="../static/images/github-logo.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <br><br><br>
-                    <md-button class="md-raised md-warn bigger changeColor" id="scrollToProject" style="background-color:transparent">
-                        <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
-                        <h3 class="white">See Projects I built</h3>
-                    </md-button>
+                        <div class="waves-effect waves-light btn blue bigger" id="scrollToProject">
+                            <p style="margin:0px;">See My Skills</p>
+                            <i class="material-icons" style="color:white;font-size:30px;">arrow_downward</i>
+                        </div>
                 </div>
-                <div class="" flex="20"></div>
             </div>
             <!-- 4TH PAGE OF MY PROTFOLIO -->
-            <div id="projectPage" layout-align="center center" ng-cloak>
+            <!-- <div id="projectPage" layout-align="center center" ng-cloak>
                 <h1 style="color:white; padding-top:6%">Projects That I built</h1>
                 <div flex layout="row" layout-align="space-around center" id="popUpContainer1" ng-cloak>
                     <md-card flex="30">
@@ -209,7 +200,7 @@
                     <md-icon style="color:white;font-size:48px;padding-top:13px;" md-font-icon="class">arrow_downward</md-icon>
                     <h3 class="white">Contact me</h3>
                 </md-button>
-            </div>
+            </div> -->
             <div id="contactPage" layout-align="center center" ng-cloak>
                 <div id="footer" class="">
                     <h1 class="white md-display-2">Contact</h1>
@@ -223,35 +214,21 @@
 				    <p class="signature">Hand-Built by me &#169</p>
                 </div>
             </div>
-        </md-content>
     </div>
 
 
 
     <!-- angular modules setup -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="angular/angular.js"></script>
     <script type="text/javascript" src="angular-route/angular-route.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-
-    <!-- Angular Material Library -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
     <!-- app setup -->
     <script type="text/javascript" src="assets/app.js"></script>
     <!-- controllers setup -->
     <script type="text/javascript" src="assets/controllers/Controller1.js"></script>
     <!-- jQuery Setup -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            'use strict';
-
-            $rootScope.$on('$routeChangeSuccess', function(event, current) {
-                $scope.currentLink = getCurrentLinkFromRoute(current);
-            });
-        });
-    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $("#scrollToAboutMe").click(function() {
